@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500568621166",
+    "project_id": "gtcv4-d8360",
+    "storage_bucket": "gtcv4-d8360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500568621166:android:e6dbecfab4ecbaa640267f",
+        "android_client_info": {
+          "package_name": "com.service.gtc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500568621166-7t5mvmhjed17hl1klokng7c6c4ld2qtc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe32qOImHy4aM78LfvXHjmxRiDFxnfTCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500568621166-7t5mvmhjed17hl1klokng7c6c4ld2qtc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
