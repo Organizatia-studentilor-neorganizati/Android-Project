@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "500568621166",
-    "project_id": "gtcv4-d8360",
-    "storage_bucket": "gtcv4-d8360.appspot.com"
+    "project_number": "182660996815",
+    "project_id": "gtc-workshop",
+    "storage_bucket": "gtc-workshop.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:500568621166:android:e6dbecfab4ecbaa640267f",
+        "mobilesdk_app_id": "1:182660996815:android:bae381a15d9aa4ec9c21ba",
         "android_client_info": {
-          "package_name": "com.service.gtc"
+          "package_name": "com.example.gtcv3"
         }
       },
       "oauth_client": [
         {
-          "client_id": "500568621166-7t5mvmhjed17hl1klokng7c6c4ld2qtc.apps.googleusercontent.com",
+          "client_id": "182660996815-eu9bmusdhvo3comkpaetagt4blebhorh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDe32qOImHy4aM78LfvXHjmxRiDFxnfTCs"
+          "current_key": "AIzaSyDTA6rFM7mkiKelnOJwIWHaV0JouDM1X9o"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "500568621166-7t5mvmhjed17hl1klokng7c6c4ld2qtc.apps.googleusercontent.com",
+              "client_id": "182660996815-eu9bmusdhvo3comkpaetagt4blebhorh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
