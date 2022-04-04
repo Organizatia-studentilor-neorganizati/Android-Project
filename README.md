@@ -5,7 +5,7 @@
 ##Requirements
 1. As a customer, I want to log in to the application.
 2. As a customer, I want to register in to the application.
-3.As a user, I want to be able to change password.
+3. As a user, I want to be able to change password.
 4. As a customer, I want to log in with social media accounts.
 5. As a user, I want to be able to change my information profile, such that, the service, could know about me.
 6. As a user, I want to see my payment history, such that I can have a proof of all receipts.
