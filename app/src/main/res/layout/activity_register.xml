@@ -103,6 +103,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/design_default_color_secondary"
         android:text="Create Account"
+        android:onClick="registerUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paswword" />
@@ -133,6 +134,7 @@
         android:text="HERE"
         android:textColor="@color/design_default_color_secondary"
         android:textStyle="bold"
+        android:onClick="redirectToLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/preparetologin"
