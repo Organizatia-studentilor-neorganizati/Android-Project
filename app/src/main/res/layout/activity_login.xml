@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundal">
 
-
     <TextView
 
         android:id="@+id/signin"
@@ -67,6 +66,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/design_default_color_secondary"
         android:text="LogIn"
+        android:onClick="loginUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paswword" />
@@ -81,6 +81,7 @@
         android:layout_marginTop="28dp"
         android:text="Forgot password?"
         android:textColor="@color/white"
+        android:onClick="forgotPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
@@ -109,48 +110,43 @@
         android:text=" HERE"
         android:textColor="@color/design_default_color_secondary"
         android:textStyle="bold"
+        android:onClick="redirectToSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/preparetoRegister"
         app:layout_constraintTop_toBottomOf="@+id/forgetpass" />
 
     <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_margin="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/twlogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/socialother" />
 
-    <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_margin="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/googleicon"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/socialother" />
-
-    <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/lfbbtn"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_margin="20dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/fblogo"
+        android:onClick="redirectToFacebookLogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/socialother"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/lgooglebtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/googleicon"
+        android:onClick="redirectToGoogleLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lfbbtn"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/socialother"
+        app:layout_constraintVertical_bias="0.057" />
 
     <TextView
         android:id="@+id/socialother"
@@ -158,6 +154,7 @@
         android:layout_height="wrap_content"
 
         android:layout_centerHorizontal="true"
+
         android:text="Sign In with"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
