@@ -1,6 +1,7 @@
 # Android-Project
 
 ##Motivation
+As we are all passionate about cars the area of the app was easy to chose: vehicles. At the same time we wanted to create something useful, something that our friends, GTC Workshop could use as a tool.
 
 ##Requirements
 1. As a customer, I want to log in to the application.
