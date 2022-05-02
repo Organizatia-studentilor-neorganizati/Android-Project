@@ -5,13 +5,13 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(tableName = "ReservationData")
+@Entity(tableName = "reservationData")
 public class ReservationData implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int reservationId;
     private String feel;
     private String model;
-    private int milage;
+    private int mileage;
     private int year;
     private String problem;
 
@@ -19,7 +19,7 @@ public class ReservationData implements Serializable {
     public ReservationData(String feel, String model, int milage, int year, String problem) {
         this.feel = feel;
         this.model = model;
-        this.milage = milage;
+        this.mileage = milage;
         this.year = year;
         this.problem = problem;
     }
@@ -28,7 +28,7 @@ public class ReservationData implements Serializable {
         this.reservationId = reservationId;
         this.feel = feel;
         this.model = model;
-        this.milage = milage;
+        this.mileage = milage;
         this.year = year;
         this.problem = problem;
     }
@@ -45,8 +45,8 @@ public class ReservationData implements Serializable {
         return model;
     }
 
-    public int getMilage() {
-        return milage;
+    public int getMileage() {
+        return mileage;
     }
 
     public int getYear() {
@@ -65,8 +65,8 @@ public class ReservationData implements Serializable {
         this.model = model;
     }
 
-    public void setMilage(int milage) {
-        this.milage = milage;
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
     }
 
     public void setYear(int year) {
@@ -83,7 +83,7 @@ public class ReservationData implements Serializable {
                 "reservationId=" + reservationId +
                 ", feel='" + feel + '\'' +
                 ", model='" + model + '\'' +
-                ", milage=" + milage +
+                ", mileage=" + mileage +
                 ", year=" + year +
                 ", problem='" + problem + '\'' +
                 '}';
