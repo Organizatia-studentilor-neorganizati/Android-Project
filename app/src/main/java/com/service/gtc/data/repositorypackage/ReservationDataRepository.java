@@ -4,21 +4,24 @@ import android.app.Application;
 
 import androidx.lifecycle.LiveData;
 
+import com.service.gtc.data.daopackage.GTCDatabase;
 import com.service.gtc.data.daopackage.ReservationDAO;
 import com.service.gtc.model.database.ReservationData;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ReservationDataRepository {
 
     private static ReservationDataRepository instance;
     private ReservationDAO reservationDAO;
+    private ExecutorService executorService;
     private LiveData<List<ReservationData>> allReservations;
 
     private ReservationDataRepository(Application application) {
-        reservationDAO = GTCDatabase.getInstance(application).reservationDao();
-        allReservations = reservationDAO.getAllData();
+        reservationDAO = GTCDatabase.getInstance(application).reservationDAO();
+        allReservations = reservationDAO.getAllReservations();
         executorService = Executors.newFixedThreadPool(2);
     }
 
@@ -35,19 +38,15 @@ public class ReservationDataRepository {
     }
 
     public LiveData<List<ReservationData>> getReservationData() {
-        allReservationsData = reservationDAO.getallReservations();
-        return allReservationsData;
+        allReservations = reservationDAO.getAllReservations();
+        return allReservations;
     }
 
     public void updateReservationData(ReservationData reservationData){
-    executorService.execute(() -> ReservationDAO.update(ReservationData));}
-
-
-
-
+    executorService.execute(() -> reservationDAO.update(reservationData));}
 
     public void deleteReservationData(ReservationData reservationData)
-    {executorService.execute(() -> ReservationDAO.delete(reservationData));}
+    {executorService.execute(() -> reservationDAO.delete(reservationData));}
 }
 
 

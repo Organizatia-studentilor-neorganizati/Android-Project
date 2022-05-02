@@ -18,9 +18,12 @@ public interface ReservationDAO {
     @Insert
     void delete(ReservationData reservation);
 
-    @Query("SELECT * FROM ReservationData ORDER BY reservationId DESC")
-    LiveData<List<ReservationData>> getallReservations();
+    @Query("SELECT * FROM reservationData WHERE reservationId = :reservationId")
+    LiveData<ReservationData> getReservation(String reservationId);
 
-    @Query("DELETE * FROM ReservationData WHERE reservationId= :reservationID")
-    void deleteById(int workout_id);
+    @Query("SELECT * FROM reservationData ORDER BY reservationId DESC")
+    LiveData<List<ReservationData>> getAllReservations();
+
+    @Query("DELETE FROM reservationData WHERE reservationId= :reservationId")
+    void deleteById(int reservationId);
 }
