@@ -1,4 +1,4 @@
-package com.service.gtc.data;
+package com.service.gtc.data.repositorypackage;
 
 import android.app.Application;
 
