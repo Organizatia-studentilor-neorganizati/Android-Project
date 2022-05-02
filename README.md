@@ -1,6 +1,7 @@
 # Android-Project
 
 ##Motivation
+
 As we are all passionate about cars the area of the app was easy to chose: vehicles. At the same time we wanted to create something useful, something that our friends, GTC Workshop could use as a tool.
 
 ##Requirements
@@ -16,7 +17,7 @@ As we are all passionate about cars the area of the app was easy to chose: vehic
 11. As an administrator I want to Live Stream videos from the garage with to work done to the cars.
 12. As an administrator I want users to book reservations within the application.
 13. As an administrator I want to accept/cancel users reservations.
-14. As an administrator I want to have a Contact Us page with relevant informations.
+14. As an administrator I want to have a Contact Us page with relevant information.
 15. As an administrator I want to have a page where I can present services.
 16. As a user, I want to receive a receipt after completing my booking.
 17. As a user, I want to be able to pay using an online method, such that my transaction would be faster.
