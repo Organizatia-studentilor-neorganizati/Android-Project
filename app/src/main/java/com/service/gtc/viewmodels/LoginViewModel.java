@@ -21,4 +21,5 @@ public class LoginViewModel extends AndroidViewModel {
     public LiveData<FirebaseUser> getCurrentUser() {
         return userRepository.getCurrentUser();
     }
+
 }
