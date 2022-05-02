@@ -24,4 +24,7 @@ public interface RegisterDAO {
 
     @Query("SELECT * FROM registerData")
     LiveData<List<RegisterData>> getAllData();
+
+    @Query("DELETE FROM registerData WHERE accountId = :account_id")
+    void deleteById(int account_id);
 }
