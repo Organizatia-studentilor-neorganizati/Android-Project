@@ -14,9 +14,17 @@ public class UserRepository {
     private final Application application;
     private UserData currentUser;
 
-    public UserRepository(Application application, UserData currentUser) {
+    public UserRepository(Application application) {
         this.application = application;
         currentUser = new UserData();
+    }
+
+    public static UserRepository getInstance(Application application) {
+        if(instance == null) {
+            instance = new UserRepository(application);
+        }
+
+        return instance;
     }
 
     public LiveData<FirebaseUser> getCurrentUser(){
