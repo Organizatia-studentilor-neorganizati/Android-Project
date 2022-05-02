@@ -7,7 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.google.firebase.auth.FirebaseUser;
-import com.service.gtc.data.UserRepository;
+import com.service.gtc.data.repositorypackage.UserRepository;
 
 public class LoginViewModel extends AndroidViewModel {
 
